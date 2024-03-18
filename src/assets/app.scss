@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+@import 'tailwindcss/base'; 
+@import 'tailwindcss/components'; 
+@import 'tailwindcss/utilities';
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+  }
+  * {
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+    }
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    padding: 50px 15px;
+    @media screen and (max-width: 700px), (max-height: 500px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .text-blue {
+    color: #1c1c1c;
+  }
+  
+  .biz-card {
+    width: 450px;
+    height: 320px;
+  }
+
+  .bg-blue {
+    background-color: #2c3e50;
+  }
+  
+  .logo-container {
+    max-height: 100px;
+    max-width: 200px;
+  }
+  
+  .logo {
+    max-height: 100px;
+  }
